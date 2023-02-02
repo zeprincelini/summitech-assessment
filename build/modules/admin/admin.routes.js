@@ -1,0 +1,10 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const express_1 = require("express");
+const celebrate_1 = require("celebrate");
+const admin_controller_1 = require("./admin.controller");
+const admin_validate_1 = require("./admin.validate");
+const router = (0, express_1.Router)();
+router.post("/sign-up", (0, celebrate_1.celebrate)({ body: admin_validate_1.signUpSchema }), admin_controller_1.signUp);
+router.post("/sign-in", (0, celebrate_1.celebrate)({ body: admin_validate_1.signInSchema }), admin_controller_1.signIn);
+exports.default = router;
