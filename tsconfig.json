@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "noEmit": false,
+    "allowJs": true,
+    "strict": false,
+    "outDir": "build",
+    "jsx": "preserve",
+    "target": "es2019",
+    "skipLibCheck": true,
+    "module": "CommonJS",
+    "noUnusedLocals": true,
+    "esModuleInterop": true,
+    "isolatedModules": true,
+    "resolveJsonModule": true,
+    "moduleResolution": "node",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "forceConsistentCasingInFileNames": true
+  },
+  "exclude": ["node_modules"],
+  "include": ["src/**/*.ts"]
+}
